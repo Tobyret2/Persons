@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css"
+          href="{%static 'bboard/style.css'%}">
+    <meta charset="UTF-8">
+    <title>{% block title %} Главная {% endblock %} </title>
+</head>
+<body>
+    <header>
+        <h1>Persons</h1>
+    </header>
+<div>
+    <form >
+        <button> Cоздать персону </button>
+    </form>
+    <form action="{% url 'view_all' %}">
+        <button> На главную страницу </button>
+    </form>
+</div>
+<selection>
+    {%block content%}
+    {%endblock%}
+</selection>
+</body>
+</html>

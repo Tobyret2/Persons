@@ -1,0 +1,10 @@
+{%extends 'layout/basic.html'%}
+
+{%block content%}
+<div>
+        {% for p in persouns %}
+        <h1>{{p.family_name}} {{p.name}}</h1>
+        <p>{{p.age}}  {{p.sex}}</p>
+        {%endfor%}
+    </div>
+{%endblock%}

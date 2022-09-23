@@ -1,0 +1,25 @@
+html{
+      margin: 0;
+      height: 100%;
+      background: url('font.png');
+      background-size: cover;}
+
+
+header h1{
+    font-size: 40pt;
+    text-transform: uppercase;
+    text_align: center;
+
+}
+nav {
+    font-size: 16pt;
+    wigth: 150px;
+    float: left;
+}
+nav a {
+    display:block;
+    margin: 10px 0px;
+}
+section {
+    margin-left: 170px
+}
