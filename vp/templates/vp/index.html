@@ -2,9 +2,10 @@
 
 {%block content%}
 <div>
-        {% for p in persouns %}
+        {% for p in persons %}
         <h1>{{p.family_name}} {{p.name}}</h1>
-        <p>{{p.age}}  {{p.sex}}</p>
+        <p>Возраст - {{p.age}} Пол -{{p.sex}}</p>
+
         {%endfor%}
     </div>
 {%endblock%}

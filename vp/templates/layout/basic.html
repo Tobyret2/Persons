@@ -5,16 +5,16 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css"
-          href="{%static 'bboard/style.css'%}">
+          href="{%static 'vp/style.css'%}">
     <meta charset="UTF-8">
     <title>{% block title %} Главная {% endblock %} </title>
 </head>
 <body>
     <header>
-        <h1>Persons</h1>
+        <h1>{% block header %} Persons {% endblock %}</h1>
     </header>
 <div>
-    <form >
+    <form action="{% url 'create_person' %}">
         <button> Cоздать персону </button>
     </form>
     <form action="{% url 'view_all' %}">
